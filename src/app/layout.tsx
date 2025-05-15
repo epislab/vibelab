@@ -16,11 +16,14 @@ export const metadata: Metadata = {
   title: "Vibe Coding Curriculum",
   description: "Vibe Coding 커리큘럼 PWA",
   manifest: "/manifest.json",
-  themeColor: "#2563eb",
   icons: [
-    { rel: "icon", url: "/icon-192x192.png", sizes: "192x192" },
-    { rel: "apple-touch-icon", url: "/icon-512x512.png", sizes: "512x512" }
+    { rel: "icon", url: "/icons/android-chrome-192x192.png", sizes: "192x192" },
+    { rel: "apple-touch-icon", url: "/icons/android-chrome-512x512.png", sizes: "512x512" }
   ]
+};
+
+export const viewport = {
+  themeColor: "#2563eb",
 };
 
 export default function RootLayout({
