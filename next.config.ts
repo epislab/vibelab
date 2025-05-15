@@ -1,14 +1,11 @@
-import withPWA from 'next-pwa';
 import type { NextConfig } from "next";
+const withPWA = require("next-pwa")({
+  dest: "public", // 서비스워커와 manifest가 public 폴더에 생성됨
+  disable: process.env.NODE_ENV === "development", // 개발환경에서는 PWA 비활성화
+});
 
 const nextConfig: NextConfig = {
   /* config options here */
-  pwa: {
-    dest: "public",
-    register: true,
-    skipWaiting: true,
-    disable: process.env.NODE_ENV === "development",
-  },
 };
 
 export default withPWA(nextConfig);
