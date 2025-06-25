@@ -754,7 +754,7 @@ export default function Home() {
                 <br /> 주기적인 작업 스케줄링
               </td>
               <td className="border px-2 py-2 align-top">
-                • `watchdog` 라이브러리로 `./internal-docs` 모니터링
+                • 라이브러리로 `./internal-docs` 모니터링
                 <br />• 파일 추가/변경 시 자동으로 임베딩 업데이트
               </td>
             </tr>
@@ -777,7 +777,7 @@ export default function Home() {
               <td className="border px-2 py-2 align-top bg-white dark:bg-white">
               패키징 및 AWS 클라우드 배포
                 <br />Docker를 이용한 컨테이너화
-                <br />사내 배포를 위한 고려사항
+                <br />AWS 클라우드 배포를 위한 고려사항
                 <br />최종 시스템 데모 및 발표
               </td>
               <td className="border px-2 py-2 align-top">
