@@ -151,7 +151,7 @@ export default function Home() {
                 (4주 과정)
               </td>
               <td className="border px-2 py-2 align-top">5주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
                 심화 SaaS 개발 #1
                 <br />
                 (문서/URL 기반 Q&A 챗봇)
@@ -168,7 +168,7 @@ export default function Home() {
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">6주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
                 심화 SaaS 개발 #2
                 <br />
                 (문서/URL 기반 Q&A 챗봇)
@@ -183,7 +183,7 @@ export default function Home() {
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">7주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
                 심화 SaaS 개발 #3
                 <br />
                 (문서/URL 기반 Q&A 챗봇)
@@ -197,7 +197,7 @@ export default function Home() {
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">8주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
                 개인 프로젝트 고도화
                 <br />
                 (Capstone & Demo Day)
@@ -356,7 +356,7 @@ export default function Home() {
                 (4주 과정)
               </td>
               <td className="border px-2 py-2 align-top">5주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
                 MSA로의 전환 및 이벤트 기반 설계
                 <br />
                 설계('가게', '주문', '알림' 서비스 분리)
@@ -369,7 +369,7 @@ export default function Home() {
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">6주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
                 AI 검색 서비스 구축
                 <br />
                 (의미/감성 기반 검색 기능 추가)
@@ -385,7 +385,7 @@ export default function Home() {
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">7주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
                 그래프 기반 추천 엔진 구축
                 <br />
                 (개인화 추천 기능 추가)
@@ -400,7 +400,7 @@ export default function Home() {
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">8주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
                 시스템 통합 및 실시간 알림 기능
                 <br />
                 (전체 시스템 완성 및 라이더 추적)
@@ -552,7 +552,7 @@ export default function Home() {
                 (4주 과정)
               </td>
               <td className="border px-2 py-2 align-top">5주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
               기획 및 대화방 UI
               </td>
               <td className="border px-2 py-2 align-top">
@@ -563,7 +563,7 @@ export default function Home() {
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">6주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
               AI 튜터와 대화하기
               </td>
               <td className="border px-2 py-2 align-top">
@@ -574,7 +574,7 @@ export default function Home() {
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">7주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
               대화 내용 분석 및 피드백
               </td>
               <td className="border px-2 py-2 align-top">
@@ -585,7 +585,7 @@ export default function Home() {
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">8주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
               수익화 및 CI/CD 및 앱
                 <br />
                 스토어 배포 준비
@@ -731,7 +731,7 @@ export default function Home() {
                 (4주 과정)
               </td>
               <td className="border px-2 py-2 align-top">5주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
               사내 문서 크롤링/수집<br />
               벡터화 및 벡터DB 구축
               </td>
@@ -744,7 +744,7 @@ export default function Home() {
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">6주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
               RAG 파이프라인 설계 및 Q&A API 완성<br />
               프롬프트 엔지니어링
               </td>
@@ -757,7 +757,7 @@ export default function Home() {
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">7주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
               관리자 대시보드/권한 관리<br />
               질의 통계/모니터링
               </td>
@@ -769,7 +769,7 @@ export default function Home() {
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">8주차</td>
-              <td className="border px-2 py-2 align-top bg-white dark:bg-white">
+              <td className="border px-2 py-2 align-top">
               실전 프로젝트 및 최종 데모<br />
               AI 거버넌스/윤리/보안 강화
               </td>
