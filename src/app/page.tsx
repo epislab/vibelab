@@ -775,7 +775,7 @@ export default function Home() {
             <tr>
               <td className="border px-2 py-2 align-top">8주차</td>
               <td className="border px-2 py-2 align-top bg-white dark:bg-white">
-              패키징 및 사내 배포
+              패키징 및 AWS 클라우드 배포
                 <br />Docker를 이용한 컨테이너화
                 <br />사내 배포를 위한 고려사항
                 <br />최종 시스템 데모 및 발표
@@ -783,7 +783,7 @@ export default function Home() {
               <td className="border px-2 py-2 align-top">
                 • Dockerfile 작성 및 애플리케이션 컨테이너화
                 <br />• 시스템 설정 및 사용법 `README.md` 작성
-                <br />• 사내망 배포 시뮬레이션 및 최종 데모
+                <br />• AWS 클라우드 배포 시뮬레이션 및 최종 데모
               </td>
             </tr>
           </tbody>
