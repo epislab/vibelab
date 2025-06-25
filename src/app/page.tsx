@@ -608,15 +608,14 @@ export default function Home() {
               4
             </div>
             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
-              모듈 4 : LLM 기반 소버린 AI 에이전트 구축 
+              모듈 4 : LLM 기반 소버린 AI 에이전트 구축
             </h2>
           </div>
           <p className="text-gray-600 dark:text-gray-300 ml-12">
-          다음은 특정 회사 내부에서만 작동하며, 회사 내 데이터만 공유되는 소버린 AI 에이전트를 구축하는 예시입니다.
-           이 에이전트의 이름은 InhouseGPT이며, 목적은 사내 문서를 분석하고 구성원의 질문에 응답하는 것입니다. 
-           외부와는 전혀 연결되지 않는 폐쇄형 시스템으로, 오직 사내 구성원만 접근할 수 있습니다. 
-           이러한 설정을 통해 기업 내부 데이터를 안전하게 활용하며, 보안과 자율성을 동시에 확보하는 
-           사내 전용 소버린 AI 시스템을 구성할 수 있습니다.
+            다음은 특정 회사 내부에서만 작동하며, 회사 내 데이터만 공유되는 소버린 AI 에이전트를 구축하는 예시입니다.<br />
+            이 에이전트의 이름은 InhouseGPT이며, 목적은 사내 문서를 분석하고 구성원의 질문에 응답하는 것입니다.<br />
+            외부와는 전혀 연결되지 않는 폐쇄형 시스템으로, 오직 사내 구성원만 접근할 수 있습니다.<br />
+            이러한 설정을 통해 기업 내부 데이터를 안전하게 활용하며, 보안과 자율성을 동시에 확보하는 사내 전용 소버린 AI 시스템을 구성할 수 있습니다.
           </p>
         </div>
       </div>
@@ -664,16 +663,16 @@ export default function Home() {
                 1주차
               </td>
               <td className="border px-2 py-2 align-top bg-yellow-50 dark:bg-yellow-900">
-              로컬 LLM 환경 구축<br />
-              폐쇄망 AI 시스템 아키텍처<br />
-                로컬 LLM 구동 원리 (GGUF)<br />
-                FastAPI 기본 서버 설정
+              온프레미스 LLM 서버 구축<br />
+              GPU 서버 세팅 및 Llama3 배포<br />
+              FastAPI 기반 추론 서버
               </td>
               <td className="border px-2 py-2 align-top min-w-[250px] bg-yellow-50 dark:bg-yellow-900">
-                • `llama-cpp-python` 설치 및 Llama3-8B 모델 로드 
-                <br />• 모델을 호출하는 FastAPI 엔드포인트 구현 
-                <br />• 폐쇄망 AI 시스템 아키텍처
-                <br />• 로컬 LLM 구동 원리 (GGUF)
+                • GPU 서버 환경 구축 (Ubuntu, CUDA, 드라이버)<br />
+                • Llama3/llama.cpp 온프레미스 배포<br />
+                • FastAPI로 LLM 추론 API 구현<br />
+                • Docker Compose로 인프라 구성 자동화<br />
+                • 사내망 방화벽/네트워크 설정
               </td>
             </tr>
             <tr>
@@ -681,17 +680,15 @@ export default function Home() {
                 2주차
               </td>
               <td className="border px-2 py-2 align-top bg-yellow-50 dark:bg-yellow-900">
-              로컬 임베딩과 벡터 DB<br />
-              로컬 임베딩 모델의 이해<br />
-                인메모리 벡터 DB (FAISS)<br />
-                문서 로딩 및 청킹 전략
+              사내 인증/인가 시스템 연동<br />
+              SSO(SAML, OAuth2) 적용<br />
+              접근제어 및 감사 로그 설계
               </td>
               <td className="border px-2 py-2 align-top bg-yellow-50 dark:bg-yellow-900">
-                • `./internal-docs` 디렉토리 문서 로더 구현
-                <br />
-                •  `sentence-transformers`로 문서 임베딩
-                <br />• 임베딩 결과를 FAISS 인덱스로 저장
-                <br />• 문서 벡터 DB 파일
+                • SSO(SAML, OAuth2) 연동 실습<br />
+                • API 접근제어(JWT, RBAC)<br />
+                • 감사 로그 및 보안 이벤트 기록<br />
+                • 사내 보안 정책 적용(비밀번호, 2FA 등)
               </td>
             </tr>
             <tr>
@@ -699,15 +696,15 @@ export default function Home() {
                 3주차
               </td>
               <td className="border px-2 py-2 align-top bg-yellow-50 dark:bg-yellow-900">
-              사내 문서 Q&A 파이프라인<br />
-              RAG 파이프라인 심화<br />
-                효과적인 프롬프트 엔지니어링<br />
-                FastAPI 서버와 RAG 연동
+              사내 데이터 연동 및 ETL<br />
+              ERP/그룹웨어/위키 등 데이터 수집<br />
+              ETL 파이프라인 구축
               </td>
               <td className="border px-2 py-2 align-top bg-yellow-50 dark:bg-yellow-900">
-                • 사용자 질문을 받아 FAISS에서 유사 문서 검색
-                <br />• 검색된 문서를 컨텍스트로 LLM에 질의
-                <br />• 최종 답변을 반환하는 Q&A API 완성
+                • 사내 데이터 소스(ERP, 위키 등) 크롤링/수집<br />
+                • ETL 자동화 파이프라인 설계<br />
+                • 데이터 전처리 및 정제<br />
+                • 정기적 데이터 동기화 스케줄링
               </td>
             </tr>
             <tr>
@@ -715,14 +712,13 @@ export default function Home() {
                 4주차
               </td>
               <td className="border px-2 py-2 align-top bg-yellow-50 dark:bg-yellow-900">
-              인증 및 감사 로그
-              <br />API 인증/인가의 중요성
-              <br />FastAPI 미들웨어를 이용한 접근 제어
-              <br />감사를 위한 로깅 시스템 설계
+              LLM 서버 운영/모니터링<br />
+              장애 대응 및 운영 자동화
               </td>
               <td className="border px-2 py-2 align-top bg-yellow-50 dark:bg-yellow-900">
-                • API Key 기반으로 API 접근 인증 구현
-                <br />• 모든 질의/응답을 `logs/audit.log`에 기록
+                • LLM 추론 서버 모니터링(Prometheus, Grafana)<br />
+                • 장애 알림/자동 롤백 스크립트<br />
+                • 운영 자동화(배포, 백업, 로그 관리)
               </td>
             </tr>
             <tr>
@@ -736,54 +732,51 @@ export default function Home() {
               </td>
               <td className="border px-2 py-2 align-top">5주차</td>
               <td className="border px-2 py-2 align-top bg-white dark:bg-white">
-              웹 UI 및 스트리밍
-                <br />Streamlit을 이용한 빠른 프로토타이핑
-                <br />LLM 응답 스트리밍의 원리
+              사내 문서 크롤링/수집<br />
+              벡터화 및 벡터DB 구축
               </td>
               <td className="border px-2 py-2 align-top">
-                • Streamlit으로 Q&A 챗봇 UI 구현
-                <br />• FastAPI에서 스트리밍 응답을 지원하도록 수정
-                <br />• UI에 타이핑 효과처럼 실시간 응답 표시
+                • 사내 문서 크롤러/수집기 개발<br />
+                • 문서 전처리/청킹/벡터화<br />
+                • FAISS/Chroma 등 벡터DB 구축<br />
+                • 문서 인덱싱 자동화
               </td>
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">6주차</td>
               <td className="border px-2 py-2 align-top bg-white dark:bg-white">
-              문서 자동 동기화
-                <br /> 파일 시스템 이벤트 모니터링
-                <br /> 주기적인 작업 스케줄링
+              RAG 파이프라인 설계 및 Q&A API 완성<br />
+              프롬프트 엔지니어링
               </td>
               <td className="border px-2 py-2 align-top">
-                • 라이브러리로 `./internal-docs` 모니터링
-                <br />• 파일 추가/변경 시 자동으로 임베딩 업데이트
+                • RAG(정보증강생성) 파이프라인 설계<br />
+                • 프롬프트 엔지니어링 실습<br />
+                • 문서 기반 Q&A API 완성<br />
+                • LLM 응답 품질 평가 및 개선
               </td>
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">7주차</td>
               <td className="border px-2 py-2 align-top bg-white dark:bg-white">
-              기능 확장 (이메일 요약)
-                <br />IMAP/SMTP 프로토콜 기초
-                <br />이메일 데이터 파싱 및 처리
-                <br />에이전트의 기능 확장 설계
+              관리자 대시보드/권한 관리<br />
+              질의 통계/모니터링
               </td>
               <td className="border px-2 py-2 align-top">
-                • 로컬 메일 서버(테스트용)에서 이메일 가져오기
-                <br />• 가져온 이메일 본문을 LLM으로 요약
-                <br />• 요약 결과를 API로 제공
+                • 관리자 대시보드(문서 업로드, 인덱싱 현황, 질의 통계)<br />
+                • 사용자별 권한 관리<br />
+                • 질의/응답 로그 시각화 및 모니터링
               </td>
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">8주차</td>
               <td className="border px-2 py-2 align-top bg-white dark:bg-white">
-              패키징 및 AWS 클라우드 배포
-                <br />Docker를 이용한 컨테이너화
-                <br />AWS 클라우드 배포를 위한 고려사항
-                <br />최종 시스템 데모 및 발표
+              실전 프로젝트 및 최종 데모<br />
+              AI 거버넌스/윤리/보안 강화
               </td>
               <td className="border px-2 py-2 align-top">
-                • Dockerfile 작성 및 애플리케이션 컨테이너화
-                <br />• 시스템 설정 및 사용법 `README.md` 작성
-                <br />• AWS 클라우드 배포 시뮬레이션 및 최종 데모
+                • 사내 FAQ 챗봇, 정책 질의응답, 문서 자동 요약 등 실전 프로젝트<br />
+                • 데이터 거버넌스/AI 윤리 가이드라인<br />
+                • 데이터 암호화, 접근 로그 분석, 이상행동 탐지 등 보안 강화 실습
               </td>
             </tr>
           </tbody>
