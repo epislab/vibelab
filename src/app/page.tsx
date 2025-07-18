@@ -732,51 +732,57 @@ export default function Home() {
               </td>
               <td className="border px-2 py-2 align-top">5주차</td>
               <td className="border px-2 py-2 align-top">
-              사내 문서 크롤링/수집<br />
-              벡터화 및 벡터DB 구축
+              사내문서 수집 + 벡터DB 구축<br />
+              → 데이터/인프라 기반 확보
               </td>
               <td className="border px-2 py-2 align-top">
-                • 사내 문서 크롤러/수집기 개발<br />
-                • 문서 전처리/청킹/벡터화<br />
-                • FAISS/Chroma 등 벡터DB 구축<br />
-                • 문서 인덱싱 자동화
+                • 사내 문서 크롤러/수집기 개발 (API 기반 포함)<br />
+                • LangChain TextSplitter로 청킹<br />
+                • KoSimCSE / BGE / OpenAI 임베딩<br />
+                • FAISS 또는 Chroma 기반 벡터DB 구축<br />
+                • 데이터 전처리 자동화 + 오프라인 인덱싱 설계<br />
               </td>
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">6주차</td>
               <td className="border px-2 py-2 align-top">
-              RAG 파이프라인 설계 및 Q&A API 완성<br />
-              프롬프트 엔지니어링
+              RAG 파이프라인 설계 + 단일턴 Q&A API 완성<br />
+              → 단일 질문 응답 구조 정립
               </td>
               <td className="border px-2 py-2 align-top">
-                • RAG(정보증강생성) 파이프라인 설계<br />
-                • 프롬프트 엔지니어링 실습<br />
-                • 문서 기반 Q&A API 완성<br />
-                • LLM 응답 품질 평가 및 개선
+                • LangChain RAG 설계 및 Prompt Engineering<br />
+                • RetrievalQA / ConversationalRetrievalQA 실습<br />
+                • FastAPI 기반 문서 Q&A API 구축<br />
+                • 프롬프트 기반 품질 개선 루프 설계<br />
+                • 로컬 전용 Q&A 서버 구현을 통한 데이터 주권 기초 실습<br />
               </td>
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">7주차</td>
               <td className="border px-2 py-2 align-top">
-              관리자 대시보드/권한 관리<br />
-              질의 통계/모니터링
+              멀티턴 대화 + 다중 Agent + 워크플로우 자동화<br />
+              → LangGraph 기반 구조 설계
               </td>
               <td className="border px-2 py-2 align-top">
-                • 관리자 대시보드(문서 업로드, 인덱싱 현황, 질의 통계)<br />
-                • 사용자별 권한 관리<br />
-                • 질의/응답 로그 시각화 및 모니터링
+                • LangGraph로 상태 기반 대화형 설계<br />
+                • LangChain Agent + Tool + Memory 조합<br />
+                • 역할별 다중 Agent 자동화 흐름 구현<br />
+                • 사용자 요청 흐름 자동화 (예: 회의 요약 → 보고서 작성)<br />
+                • LangGraph로 구성된 자율적 의사결정 Agent 흐름 실습<br />
               </td>
             </tr>
             <tr>
               <td className="border px-2 py-2 align-top">8주차</td>
               <td className="border px-2 py-2 align-top">
-              실전 프로젝트 및 최종 데모<br />
-              AI 거버넌스/윤리/보안 강화
+              개인화 + 소버린 AI + 모델 튜닝 + API화 + 거버넌스<br />
+              → 완전한 개인/조직 내 독립형 AI 구축 및 데모 발표
               </td>
               <td className="border px-2 py-2 align-top">
-                • 사내 FAQ 챗봇, 정책 질의응답, 문서 자동 요약 등 실전 프로젝트<br />
+                • 소버린 AI 개념 도입: 외부 의존 없는 자체 AI 운영<br />
                 • 데이터 거버넌스/AI 윤리 가이드라인<br />
-                • 데이터 암호화, 접근 로그 분석, 이상행동 탐지 등 보안 강화 실습
+                • Hugging Face Hub 또는 로컬 서버 기반 Inference API 구성<br />
+                • 프라이빗 에이전트: 사용자 데이터 주권 보장<br />
+                • 최종 데모: 소버린 퍼스널 AI 비서 / <br />사내 전용 LLM 봇 구축 발표
               </td>
             </tr>
           </tbody>
